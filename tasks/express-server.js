@@ -15,6 +15,7 @@ module.exports = function(grunt) {
         done = this.async();
 
     app.use(lock);
+    app.use(express.compress());
 
     if (target === 'debug') {
       // For `expressServer:debug`
@@ -29,8 +30,9 @@ module.exports = function(grunt) {
       app.use(static({ directory: 'public' }));
       app.use(static({ urlRoot: '/tests', directory: 'tests' })); // For test_helper.js and test_loader.js
 
-      app.use(static({ directory: 'tmp/public' }));
-      app.use(static({ file: 'tmp/public/index.html' })); // Gotta catch 'em all
+      app.use(static({ directory: 'tmp/result' }));
+      app.use(static({ file: 'tmp/result/index.html' })); // Gotta catch 'em all
+
     } else {
       // For `expressServer:dist`
 

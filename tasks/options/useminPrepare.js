@@ -1,5 +1,6 @@
 module.exports = {
-  html: 'tmp/public/index.html',
+
+  html: 'tmp/result/index.html',
   options: {
     dest: 'dist/'
   }
