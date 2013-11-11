@@ -18,7 +18,6 @@
     "url": "git://github.com/stefanpenner/ember-app-kit.git"
   },
   "author": "",
-
   "license": "MIT",
   "devDependencies": {
     "express": "~3.4.2",
@@ -45,6 +44,8 @@
     "karma": "~0.9.4",
     "karma-qunit": "~0.0.3",
     "karma-coverage": "~0.0.3",
-    "karma-phantomjs-launcher": "~0.0.2"
+    "karma-phantomjs-launcher": "~0.0.2",
+    "connect-livereload": "~0.3.0",
+    "grunt-contrib-stylus": "~0.10.0"
   }
 }
